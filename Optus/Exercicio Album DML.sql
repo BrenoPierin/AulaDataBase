@@ -1,16 +1,16 @@
 --     Album e artista     --
 /* DML - Data Manipulation Language */
 --INSERT - Inserir dados
-INSERT INTO album (Nome) VALUES ('Hora do rush');
-INSERT INTO artista (Nome) VALUES ('Recayd Mob');
-INSERT INTO estiloMusical (Tipo) VALUES ('T');
-INSERT INTO estilo (idAlbum, idEstiloMusical ) VALUES ( 1, 4);
+INSERT INTO album (Nome) VALUES ('IGOR');
+INSERT INTO artista (Nome) VALUES ('Tyler, The Creator');
+--INSERT INTO estiloMusical (Tipo) VALUES ('R');
+INSERT INTO estilo (idAlbum, idEstiloMusical ) VALUES ( 5, 6);
 
 
 -- UPDATE - Alterar dados
 UPDATE album SET
-	idArtista = 1
-WHERE idAlbum = 1;
+	idArtista = 4
+WHERE idAlbum = 5;
 
 -- DELETE - Deletar dados
 DELETE FROM artista WHERE idArtista = 2;

@@ -14,9 +14,9 @@ INSERT INTO tipo(Descricao) VALUES ('Cão');
 	--('Pastor Alemão');
 
 -- UPDATE - Alterar dados
-UPDATE pet SET
-	Nome = ('Flora')
-WHERE idPet = 3;
+UPDATE tipo SET
+	Descricao = ('C')
+WHERE idTipo = 1;
 
 -- DELETE - Deletar dados
 DELETE FROM tipo
