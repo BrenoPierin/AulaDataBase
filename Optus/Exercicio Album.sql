@@ -1,5 +1,5 @@
 /*Criamos o banco de dados */
-CREATE DATABASE album;
+CREATE DATABASE albumDB;
 GO
 
 /*Comando para usar o banco criado*/

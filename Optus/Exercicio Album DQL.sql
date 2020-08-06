@@ -1,6 +1,6 @@
 /* Aula sobre DQL*/
 --Primeiro trocamos o Banco 
-USE album;
+USE albumDB;
 
 --DQL Data Query Language
 
@@ -33,3 +33,19 @@ SELECT * FROM album WHERE idAlbum < 6 AND idAlbum > 3;
 
 -- Selecionar dados entre dados especificos
 SELECT * FROM album WHERE idArtista BETWEEN '1' AND '3';
+
+/* Join */
+SELECT
+album.Nome,
+artista.Nome
+FROM album
+INNER JOIN artista ON artista.idArtista = artista.idArtista
+WHERE album.Nome != 'IGOR'
+;
+
+SELECT
+album.Nome,
+artista.Nome
+FROM album
+RIGHT JOIN artista ON artista.idArtista = artista.idArtista
+;

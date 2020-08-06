@@ -30,3 +30,10 @@ SELECT * FROM pet WHERE idPet < 5 AND idPet > 2;
 -- Selecionar dados entre dados especificos
 SELECT * FROM pet WHERE idPet BETWEEN '1' AND '3';
 
+/* Join */
+SELECT
+pet.Nome
+FROM tipo
+RIGHT JOIN raca ON raca.idTipo = raca.idTipo
+LEFT JOIN pet ON raca.idTipo = raca.idTipo
+;
