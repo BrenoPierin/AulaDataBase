@@ -5,7 +5,7 @@ Criar um novo Banco de Dados
 CREATE DATABASE veterinario;
 GO
 /*
-Usarmos o Bnaco de dados
+Usamos o Banco de dados
 */
 USE veterinario;
 GO
@@ -42,4 +42,4 @@ Nome VARCHAR(20) NOT NULL,
 --Foreign key's
 idRaca INT FOREIGN KEY REFERENCES raca (idRaca),
 );
-
+ALTER TABLE tipo ALTER COLUMN Descricao VARCHAR(50)

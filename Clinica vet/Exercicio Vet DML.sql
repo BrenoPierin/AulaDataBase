@@ -4,9 +4,9 @@ GO
 
 /* DML - Data Manipulation Language */
 --INSERT - Inserir dados
-INSERT INTO pet (DataDeNascimento, Nome, idRaca) VALUES ('2008-08-15', 'Rex');
 INSERT INTO raca (tipoRaca) VALUES ('Golden');
-INSERT INTO tipo(Descricao) VALUES ('Cão');
+INSERT INTO pet (DataDeNascimento, Nome, idRaca) VALUES ('2008-08-15', 'Bob', 4);
+--INSERT INTO tipo(Descricao) VALUES ('Cão');
 
 --INSERT INTO raca 
 	--(tipoRaca)
@@ -15,12 +15,12 @@ INSERT INTO tipo(Descricao) VALUES ('Cão');
 
 -- UPDATE - Alterar dados
 UPDATE tipo SET
-	Descricao = ('C')
+	Descricao = ('Cachorro')
 WHERE idTipo = 1;
 
 -- DELETE - Deletar dados
-DELETE FROM tipo
-WHERE idTipo = 2;
+DELETE FROM pet
+WHERE idPet = 4;
 
 -- DQL de consulta simples
 SELECT * FROM pet;

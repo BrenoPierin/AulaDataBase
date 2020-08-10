@@ -32,8 +32,10 @@ SELECT * FROM pet WHERE idPet BETWEEN '1' AND '3';
 
 /* Join */
 SELECT
-pet.Nome
-FROM tipo
-RIGHT JOIN raca ON raca.idTipo = raca.idTipo
-LEFT JOIN pet ON raca.idTipo = raca.idTipo
+pet.Nome,
+raca.tipoRaca,
+tipo.Descricao
+FROM pet
+INNER JOIN raca ON pet.idRaca = raca.idRaca
+INNER JOIN tipo ON raca.idTipo = tipo.idTipo
 ;
